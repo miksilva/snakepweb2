@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"></meta>
+	<head>
+		<title>Snake Game.</title>
+		<style>
+			#canvas
+			{
+				
+   	 		padding-left: 0;
+   	 		padding-right: 0;
+   	 		margin-left: auto;
+    			margin-right: auto;
+    			display: block;
+			}
+			div{
+				text-align: center;
+				color: hsl(64, 99%, 50%);
+				
+			}
+			body{
+				background-color: rgb(60, 133, 133);
+			}
+		</style>
+	</head>
+	<body onkeydown="keyboardDown(event)" onkeyup="keyboardUp(event)" onload="setInterval('gameMain()', 130)">
+		<script type="text/javascript" src="snake.js"></script>
+		<div>
+			<p>Snake game </br> PONTUAÇÃO ATUAL: <strong id="currSize"></strong> - RECORDE ANTERIOR: <strong id="lastSize"></strong></p>
+			<canvas id="canvas" style="border:1px solid black; "></canvas>
+		</div>
+	</body>
+</html>
